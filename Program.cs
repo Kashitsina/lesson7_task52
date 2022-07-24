@@ -9,7 +9,7 @@ void Zadacha52()
             FillArray(array);
             PrintArray(array);
             
-            Console.WriteLine("Вывод массива по столбцам");
+            Console.WriteLine("Cреднее арифметическое элементов в каждом столбце");
             for (int j = 0; j < columns; j++)
             {
                 double sum = 0;
