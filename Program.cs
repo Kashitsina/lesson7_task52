@@ -1,4 +1,4 @@
-﻿void Zadacha52()
+void Zadacha52()
         {
             //Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
             Random random = new Random();
@@ -12,12 +12,13 @@
             Console.WriteLine("Вывод массива по столбцам");
             for (int j = 0; j < columns; j++)
             {
-                int sum = 0;
+                double sum = 0;
                 for (int i = 0; i < rows; i++)
                 {
                     sum += array[i, j];
                 }
-                Console.Write(sum + "\t");
+                double average = sum / rows;
+                Console.Write(sum/ rows + "\t");
             }
 
 
@@ -30,7 +31,7 @@
                 {
                     for (int j = 0; j < columns; j++)
                     {
-                        array[i, j] = random.Next(0,100) ;
+                        array[i, j] = random.Next(0,10) ;
                     }
                 }
 
@@ -58,3 +59,4 @@
 
         Zadacha52();
         
+
